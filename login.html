@@ -4,16 +4,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <style>
-      ul {
-        list-style: none;
-      }
-    </style>
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/main.css">
   </head>
-
+    <my-header></my-header>
     <main>
       <h1>Welcome to the Login Page</h1>
     </main>
+    <my-footer></my-footer>
+    
+    <script src="./uihtml.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        makeUiHtml("my-header", "./component/header.html");
+        makeUiHtml("my-footer", "./component/footer.html");
+      });
+    </script>
   </body>
 </html>
